@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import ProductProvider from './onlineListing/page';
 
 // Pages
-import Ecommerce from './onlineListing/pages/ECommerce';
+import ECommerce from './onlineListing/pages/ECommerce';
 import StoreLocation from './onlineListing/pages/StoreLocation';
 import ContactUs from './onlineListing/pages/ContactUs';
 import Faq from './onlineListing/pages/Faq';
@@ -25,12 +25,13 @@ import ViewProducts from './onlineListing/components/ViewProducts';
 import Erceipt from './onlineListing/components/Erceipt';
 
 function App() {
+    console.log('ECommerce Import:', ECommerce);
     return (
         <ProductProvider>
             <Router>  {/* Make sure Router is wrapping the Routes */}
                 <Routes>
                     {/* Main E-commerce Routes */}
-                    <Route path="/iRIG" element={<Ecommerce />} />
+                    <Route path="/iRIG" element={<ECommerce />} />
                     <Route path="/Ereceipt" element={<Erceipt />} />
                     <Route path="/iRIG/products/view/:id" element={<ViewProducts />} />
                     
