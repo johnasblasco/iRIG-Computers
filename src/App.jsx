@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import ProductProvider from './onlineListing/page';
 
 // Pages
-import Ecommerce from './onlineListing/pages/Ecommerce';
+import Ecommerce from './onlineListing/pages/ECommerce';
 import StoreLocation from './onlineListing/pages/StoreLocation';
 import ContactUs from './onlineListing/pages/ContactUs';
 import Faq from './onlineListing/pages/Faq';

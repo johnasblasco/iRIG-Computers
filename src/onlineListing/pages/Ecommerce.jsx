@@ -8,7 +8,7 @@ import IRIGImage from '../assets/IRIGImage.png';
 import axios from 'axios';
 import { ToastContainer } from 'react-toastify';
 
-const Ecommerce = () => {
+const ECommerce = () => {
     const [query, setQuery] = useState('');
     const [currentIndexLatest, setCurrentIndexLatest] = useState(0);
     const [currentIndexTopSellers, setCurrentIndexTopSellers] = useState(0);
@@ -135,4 +135,4 @@ const Ecommerce = () => {
     );
 };
 
-export default Ecommerce;
+export default ECommerce;
